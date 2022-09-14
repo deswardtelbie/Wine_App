@@ -35,13 +35,14 @@ class HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         centerTitle: true,
         backgroundColor: Colors.white,
         shadowColor: null,
         leading: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Image.asset(
-            'assets/Wine_App_Logo.jpg',
+            'assets/Logo.png',
             width: 100,
             height: 100,
             fit: BoxFit.cover,
@@ -50,7 +51,9 @@ class HomeScreenState extends State<HomeScreen> {
         title: Text(
           'Specials',
           style: TextStyle(
-              color: Theme.of(context).colorScheme.primary, fontSize: MediaQuery.of(context).size.height/20),
+              color: Theme.of(context).colorScheme.primary,
+              fontSize: MediaQuery.of(context).size.height / 20,
+              fontWeight: FontWeight.w600),
         ),
       ),
       // Add container to give it rounded edges
@@ -66,23 +69,24 @@ class HomeScreenState extends State<HomeScreen> {
           //Tab bar at the bottom of the screen
           backgroundColor: Colors.transparent,
           type: BottomNavigationBarType.fixed,
-          iconSize: 40,
-          selectedFontSize: 15,
-          unselectedFontSize: 15,
+          elevation: 0,
+          iconSize: 55,
+          selectedFontSize: 5,
+          unselectedFontSize: 5,
           currentIndex: currentIndex,
           selectedItemColor: Colors.grey[200],
           unselectedItemColor: Colors.white,
           items: const [
             BottomNavigationBarItem(
-              icon: Icon(Icons.history),
+              icon: Icon(Icons.search),
               label: '',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.add_chart),
+              icon: Icon(Icons.home),
               label: '',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.add),
+              icon: Icon(Icons.settings_outlined),
               label: '',
             ),
           ],

@@ -120,7 +120,6 @@ class LoginScreenState extends State<LoginScreen> {
                         child: Text(
                           'Login',
                           style: TextStyle(
-                            // fontFamily: 'Montserrat',
                             fontSize: MediaQuery.of(context).size.height / 25,
                             fontWeight: FontWeight.bold,
                             color: Colors.grey[600],
