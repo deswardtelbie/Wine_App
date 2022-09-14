@@ -19,6 +19,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        fontFamily: 'Red Hat Display',
+
         colorScheme: const ColorScheme(
           primary: Color(0xFFCB343B), // focus
           onPrimary: Colors.white,

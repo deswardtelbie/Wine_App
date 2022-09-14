@@ -71,7 +71,7 @@ class SignUpScreenState extends State<SignUpScreen> {
                   child: Row(
                     children: [
                       Image.asset(
-                        'assets/Wine_App_Logo.jpg',
+                        'assets/Logo.png',
                         width: MediaQuery.of(context).size.height * 0.1,
                         height: MediaQuery.of(context).size.height * 0.1,
                         fit: BoxFit.cover,
@@ -100,10 +100,9 @@ class SignUpScreenState extends State<SignUpScreen> {
                         child: Text(
                           'Sign Up',
                           style: TextStyle(
-                            // fontFamily: 'Montserrat',
                             fontSize: MediaQuery.of(context).size.height / 25,
-                            fontWeight: FontWeight.w500,
-                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.grey[600],
                           ),
                         ),
                       ),
@@ -282,7 +281,7 @@ class SignUpScreenState extends State<SignUpScreen> {
                             TextSpan(
                               text: 'Have an account?',
                               style: TextStyle(
-                                color: Colors.grey,
+                                color: Colors.grey[600],
                                 fontSize:
                                 MediaQuery.of(context).size.height / 40,
                                 fontWeight: FontWeight.w400,

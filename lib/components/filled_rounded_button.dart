@@ -52,9 +52,9 @@ class FilledRoundedButton extends StatelessWidget {
             letterSpacing: 1.5,
             // Design differences implemented
             fontFamily: applyFont ? 'Montserrat' : null,
-            fontWeight: FontWeight.w600,
+            fontWeight: FontWeight.bold,
             // Design differences implemented
-            fontSize: applyFont ? 15 : MediaQuery.of(context).size.height / 40,
+            fontSize: applyFont ? 15 : MediaQuery.of(context).size.height / 35,
           ),
         ),
       ),

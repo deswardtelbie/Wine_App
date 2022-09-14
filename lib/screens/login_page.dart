@@ -91,7 +91,7 @@ class LoginScreenState extends State<LoginScreen> {
                   child: Row(
                     children: [
                       Image.asset(
-                        'assets/Wine_App_Logo.jpg',
+                        'assets/Logo.png',
                         width: MediaQuery.of(context).size.height * 0.1,
                         height: MediaQuery.of(context).size.height * 0.1,
                         fit: BoxFit.cover,
@@ -122,8 +122,8 @@ class LoginScreenState extends State<LoginScreen> {
                           style: TextStyle(
                             // fontFamily: 'Montserrat',
                             fontSize: MediaQuery.of(context).size.height / 25,
-                            fontWeight: FontWeight.w500,
-                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.grey[600],
                           ),
                         ),
                       ),
@@ -238,9 +238,10 @@ class LoginScreenState extends State<LoginScreen> {
                         child: Text(
                           'Forgot your password?',
                           style: TextStyle(
-                              color: Colors.grey,
+                              color: Colors.grey[600],
                               fontSize:
-                                  MediaQuery.of(context).size.height / 40),
+                                  MediaQuery.of(context).size.height / 40,
+                          fontWeight: FontWeight.bold),
                         ),
                         onPressed: () {
                           Navigator.push(
@@ -280,7 +281,7 @@ class LoginScreenState extends State<LoginScreen> {
                             TextSpan(
                               text: 'Don\'t have an account?',
                               style: TextStyle(
-                                color: Colors.grey,
+                                color: Colors.grey[600],
                                 fontSize:
                                     MediaQuery.of(context).size.height / 40,
                                 fontWeight: FontWeight.w400,
